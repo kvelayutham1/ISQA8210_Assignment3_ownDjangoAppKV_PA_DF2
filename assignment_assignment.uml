@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.assignment_assignment</OriginalElement>
+  <nodes>
+    <node x="931.2342105263157" y="448.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_employee</node>
+    <node x="-25.981502159057243" y="788.2389843166541">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_user_permissions</node>
+    <node x="-38.03051317614424" y="962.7270884455352">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.sqlite_master</node>
+    <node x="121.80507841672892" y="962.7270884455352">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_migrations</node>
+    <node x="566.4147458826301" y="467.9542302357836">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group</node>
+    <node x="296.75" y="778.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group_permissions</node>
+    <node x="510.694921583271" y="962.7270884455352">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.sqlite_sequence</node>
+    <node x="324.25" y="962.7270884455352">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_session</node>
+    <node x="1024.2605263157893" y="974.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.assignment_assignment</node>
+    <node x="55.25" y="459.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_admin_log</node>
+    <node x="1138.2342105263156" y="503.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_client</node>
+    <node x="1163.4842105263156" y="712.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_project</node>
+    <node x="62.28289473684208" y="154.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_content_type</node>
+    <node x="266.25" y="503.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_permission</node>
+    <node x="682.8575034954824" y="756.0593193214553">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_groups</node>
+    <node x="986.9842105263157" y="0.0">6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group_permissions" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="-51.0" y="-39.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_admin_log" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="47.75" y="-94.0" />
+      <point x="198.5" y="417.0" />
+      <point x="1004.7842105263156" y="417.0" />
+      <point x="-71.20000000000005" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.assignment_assignment" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_employee" relationship="REFERENCES">
+      <point x="-67.0" y="-94.0" />
+      <point x="1057.7605263157893" y="948.0" />
+      <point x="1024.2342105263156" y="948.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_groups" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="-53.25" y="-39.0" />
+      <point x="736.1075034954824" y="690.0" />
+      <point x="632.9147458826301" y="690.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_user_permissions" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="-70.5" y="-39.0" />
+      <point x="44.51849784094276" y="690.0" />
+      <point x="347.75" y="690.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.assignment_assignment" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_project" relationship="REFERENCES">
+      <point x="67.0" y="-94.0" />
+      <point x="1191.7605263157893" y="948.0" />
+      <point x="1264.9842105263156" y="948.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_permission" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="0.0" y="-50.0" />
+      <point x="347.75" y="427.0" />
+      <point x="152.78289473684208" y="427.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_user_permissions" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="70.5" y="-39.0" />
+      <point x="185.51849784094276" y="680.0" />
+      <point x="542.1092105263157" y="680.0" />
+      <point x="542.1092105263157" y="427.0" />
+      <point x="776.2605263157892" y="427.0" />
+      <point x="776.2605263157892" y="407.0" />
+      <point x="1040.3842105263157" y="407.0" />
+      <point x="-35.59999999999991" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.assignment_assignment" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="0.0" y="-94.0" />
+      <point x="1124.7605263157893" y="948.0" />
+      <point x="1127.7342105263156" y="948.0" />
+      <point x="1127.7342105263156" y="427.0" />
+      <point x="1073.0105263157893" y="427.0" />
+      <point x="1073.0105263157893" y="417.0" />
+      <point x="1075.9842105263156" y="417.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_admin_log" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="-47.75" y="-94.0" />
+      <point x="103.0" y="427.0" />
+      <point x="152.78289473684208" y="427.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_project" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_client" relationship="REFERENCES">
+      <point x="-50.75" y="-105.0" />
+      <point x="1214.2342105263156" y="690.0" />
+      <point x="1219.2342105263156" y="690.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_client" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="0.0" y="-50.0" />
+      <point x="1219.2342105263156" y="417.0" />
+      <point x="1111.5842105263155" y="417.0" />
+      <point x="35.59999999999991" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_groups" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="53.25" y="-39.0" />
+      <point x="842.6075034954824" y="690.0" />
+      <point x="889.3855263157892" y="690.0" />
+      <point x="889.3855263157892" y="427.0" />
+      <point x="776.2605263157892" y="427.0" />
+      <point x="776.2605263157892" y="407.0" />
+      <point x="1040.3842105263157" y="407.0" />
+      <point x="-35.59999999999991" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_employee" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="0.0" y="-105.0" />
+      <point x="1024.2342105263156" y="427.0" />
+      <point x="1073.0105263157893" y="427.0" />
+      <point x="1073.0105263157893" y="417.0" />
+      <point x="1075.9842105263156" y="417.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.manager_project" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="50.75" y="-105.0" />
+      <point x="1315.7342105263156" y="690.0" />
+      <point x="1310.7342105263156" y="690.0" />
+      <point x="1310.7342105263156" y="407.0" />
+      <point x="1147.1842105263158" y="407.0" />
+      <point x="71.20000000000005" y="193.0" />
+    </edge>
+    <edge source="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group_permissions" target="6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="51.0" y="-39.0" />
+      <point x="449.75" y="690.0" />
+      <point x="632.9147458826301" y="690.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6836615609044493" showDependencies="false" x="533.6534727408514" y="748.6932678971514" />
+  <SelectedNodes>
+    <node>6deb20fa-7042-43b7-a5d9-a24825c8c67f.TABLE:main.users_customuser_groups</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+  </Categories>
+</Diagram>
+

@@ -1,0 +1,5 @@
+Django
+Pillow
+Django-crispy-forms
+braintree==3.59.0
+WeasyPrint==51

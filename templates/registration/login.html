@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock title %}
+
+{% block content %}
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    </head>
+ <body>
+
+  <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+<h2>Log In</h2>
+
+  {% if form.errors %}
+    <p>Your username and password didn't match. Please try again.</p>
+  {% endif %}
+
+  {% if next %}
+    {% if user.is_authenticated %}
+      <p>Your account doesn't have access to this page. To proceed,
+      please login with an account that has access.</p>
+    {% else %}
+      <p>Please login to see this page.</p>
+    {% endif %}
+  {% endif %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success ml-2" type="submit">Log In</button>
+</form>
+
+  <p><a href="{% url 'password_reset' %}">Forget password?</a></p>
+
+ </body>
+</html>
+{% endblock content %}

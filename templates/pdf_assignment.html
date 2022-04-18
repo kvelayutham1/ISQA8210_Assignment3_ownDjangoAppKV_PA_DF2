@@ -1,0 +1,51 @@
+
+
+{% block title %}Project Assignment Details of {{ assignment.employee_name }}{% endblock title %}
+
+{% block content %}
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    </head>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+    <body>
+ <p>
+
+        <div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr class="bg-info">
+                <th>Employee Name</th>
+                <th>Allocation percentage</th>
+                <th>Project Manager</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Project Name</th>
+                <th>Comments</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for project in projects %}
+                 <tr>
+                    <td>{{ assignment.employee_name }}</td>
+                    <td>{{ assignment.allocation_percentage }}</td>
+                    <td>{{ assignment.Project_manager }}</td>
+                    <td>{{ assignment.start_date }}</td>
+                    <td>{{ assignment.end_date }}</td>
+                    <td>{{ assignment.project_name }}</td>
+                    <td>{{ assignment.comments }}</td>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+        </body>
+    </html>
+{% endblock content %}

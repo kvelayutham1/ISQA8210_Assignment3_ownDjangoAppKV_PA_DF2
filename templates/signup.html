@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Sign Up{% endblock title %}
+
+{% block content %}
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    </head>
+ <body>
+
+  <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+<h2>Sign Up</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button class="btn btn-success" type="submit">Sign Up</button>
+</form>
+ </body>
+</html>
+{% endblock content %}

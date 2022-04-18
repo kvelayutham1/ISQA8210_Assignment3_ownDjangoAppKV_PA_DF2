@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+<html lang="en">
+{% block content %}
+
+    <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    </head>
+    <body>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+
+        <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url({% static "images/jumbobg.jpg" %})">
+        <h1 class="display-4">Manager's Self Service</h1>
+        <p class="lead">One stop link to manage Employees and Projects</p>
+<!--        <a class="btn btn-primary btn-lg" href="{% url 'project_list' %}" role="tab" aria-controls="Get Started"
+           aria-selected="false">Get Started</a>
+
+           -->
+    </div>
+
+    {% if user.is_authenticated %}
+        <div class="page-container">
+
+            <h2 class="top-menu">Hello {{ user.username }},</h2>
+            <p>Please choose from below options.</p>
+        </div>
+    {% endif %}
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'client_list' %}">
+                    <img src="{% static "images/clients3.jpg" %}" alt="Lights" height="400px" width="300px">
+                    <div class="caption">
+                        <p>My Clients</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'project_list' %}">
+                    <img src="{% static "images/projects2.jpg" %}" alt="Nature" height="400px" width="300px">
+                    <div class="caption">
+                        <p>My Projects</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'employee_list' %}">
+                    <img src="{% static "images/employees2.png" %}" alt="Fjords" height="400px" width="300px">
+                    <div class="caption">
+                        <p>My Employees</p>
+                          </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+    <div class="row-flex">
+            <h3 id="contactus">
+                Contact for Technical Support
+            </h3>
+            <p>
+                <span><b>Phone:</b> 531-002-0008</span>
+            </p>
+        <p> <span><b> Email:</b> <u>aktechsupport@gmail.com</u></span>
+            </p>
+    </div>
+</div>
+
+    </body>
+
+{% endblock content %}
+    </html>

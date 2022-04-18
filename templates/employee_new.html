@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    </head>
+ <body>
+
+  <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+    <h1>Add a New employee</h1>
+    <form method="POST" class="employee-form">{% csrf_token %}
+          {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</body>
+{% endblock %}
+
+</html>

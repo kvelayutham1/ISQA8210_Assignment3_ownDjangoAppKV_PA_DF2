@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% block body_block %}
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    </head>
+ <body>
+  <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+    <h1>Delete {{ client.client_name }}?</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger" value="Delete">
+        <a href="{% url 'manager:home' pk=client.client_name %} ">Cancel</a>
+    </form>
+
+    </body>
+ </html>
+{% endblock %}
+

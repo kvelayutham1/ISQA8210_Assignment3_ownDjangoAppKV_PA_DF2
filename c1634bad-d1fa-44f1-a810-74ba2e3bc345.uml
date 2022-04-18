@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>c1634bad-d1fa-44f1-a810-74ba2e3bc345</OriginalElement>
+  <nodes>
+    <node x="285.24999999999994" y="471.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_employee</node>
+    <node x="794.25" y="824.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_groups</node>
+    <node x="1237.3526315789472" y="154.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_content_type</node>
+    <node x="173.0" y="1321.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_migrations</node>
+    <node x="861.9184210526315" y="526.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_permission</node>
+    <node x="383.0" y="1321.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_session</node>
+    <node x="588.0" y="1321.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.sqlite_sequence</node>
+    <node x="492.24999999999994" y="824.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_user_permissions</node>
+    <node x="1241.9605263157896" y="482.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_admin_log</node>
+    <node x="1088.9605263157896" y="548.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group</node>
+    <node x="98.24999999999994" y="526.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_client</node>
+    <node x="0.0" y="1321.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.sqlite_master</node>
+    <node x="340.99999999999994" y="0.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser</node>
+    <node x="1027.25" y="824.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group_permissions</node>
+    <node x="33.25" y="758.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_project</node>
+    <node x="289.33552631578965" y="1043.0">c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.assignment_assignment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_project" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_client" relationship="REFERENCES">
+      <point x="50.75" y="-116.5" />
+      <point x="185.5" y="736.0" />
+      <point x="181.74999999999994" y="736.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_user_permissions" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="70.5" y="-50.5" />
+      <point x="703.75" y="736.0" />
+      <point x="943.4184210526315" y="736.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_groups" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="-53.25" y="-50.5" />
+      <point x="847.5" y="726.0" />
+      <point x="770.625" y="726.0" />
+      <point x="770.625" y="450.0" />
+      <point x="639.8355263157896" y="450.0" />
+      <point x="639.8355263157896" y="430.0" />
+      <point x="465.5999999999999" y="430.0" />
+      <point x="35.599999999999966" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_client" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="0.0" y="-61.5" />
+      <point x="181.74999999999994" y="440.0" />
+      <point x="394.3999999999999" y="440.0" />
+      <point x="-35.60000000000002" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.assignment_assignment" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_employee" relationship="REFERENCES">
+      <point x="0.0" y="-116.5" />
+      <point x="389.83552631578965" y="1017.0" />
+      <point x="378.24999999999994" y="1017.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_user_permissions" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="-70.5" y="-50.5" />
+      <point x="562.75" y="736.0" />
+      <point x="634.8355263157896" y="736.0" />
+      <point x="634.8355263157896" y="450.0" />
+      <point x="639.8355263157896" y="450.0" />
+      <point x="639.8355263157896" y="430.0" />
+      <point x="465.5999999999999" y="430.0" />
+      <point x="35.599999999999966" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_project" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="-50.75" y="-116.5" />
+      <point x="84.0" y="736.0" />
+      <point x="87.75" y="736.0" />
+      <point x="87.75" y="430.0" />
+      <point x="358.79999999999995" y="430.0" />
+      <point x="-71.19999999999999" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_permission" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="-1.1368683772161603E-13" y="-61.5" />
+      <point x="943.4184210526314" y="450.0" />
+      <point x="1327.8526315789472" y="450.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_employee" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="0.0" y="-116.5" />
+      <point x="378.24999999999994" y="450.0" />
+      <point x="441.58552631578965" y="450.0" />
+      <point x="441.58552631578965" y="440.0" />
+      <point x="429.99999999999994" y="440.0" />
+      <point x="0.0" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.assignment_assignment" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.manager_project" relationship="REFERENCES">
+      <point x="-67.0" y="-116.5" />
+      <point x="322.83552631578965" y="1017.0" />
+      <point x="134.75" y="1017.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.assignment_assignment" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="67.0" y="-116.5" />
+      <point x="456.83552631578965" y="1017.0" />
+      <point x="481.74999999999994" y="1017.0" />
+      <point x="481.74999999999994" y="450.0" />
+      <point x="441.58552631578965" y="450.0" />
+      <point x="441.58552631578965" y="440.0" />
+      <point x="429.99999999999994" y="440.0" />
+      <point x="0.0" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_admin_log" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser" relationship="REFERENCES">
+      <point x="-47.75" y="-105.5" />
+      <point x="1289.7105263157896" y="440.0" />
+      <point x="501.19999999999993" y="440.0" />
+      <point x="71.19999999999999" y="204.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group_permissions" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="51.0" y="-50.5" />
+      <point x="1180.25" y="726.0" />
+      <point x="1155.4605263157896" y="726.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group_permissions" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="-51.0" y="-50.5" />
+      <point x="1078.25" y="736.0" />
+      <point x="943.4184210526315" y="736.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_admin_log" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="47.75" y="-105.5" />
+      <point x="1385.2105263157896" y="450.0" />
+      <point x="1327.8526315789472" y="450.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.users_customuser_groups" target="c1634bad-d1fa-44f1-a810-74ba2e3bc345.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="53.25" y="-50.5" />
+      <point x="954.0" y="726.0" />
+      <point x="1155.4605263157896" y="726.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4839960238568588" showDependencies="false" x="1376.2440476190477" y="732.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

@@ -1,0 +1,47 @@
+
+
+{% block title %}Employee Details{% endblock title %}
+
+{% block content %}
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AK Technologies</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    </head>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+    <body>
+ <p>
+
+       <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr class="bg-info">
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>DOJ</th>
+                <th>Project Manager</th>
+                <th>Location</th>
+                <th>Designation</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for employee in employees %}
+                <tr>
+                    <td>{{ employee.employee_name }}</td>
+                    <td>{{ employee.Email }}</td>
+                    <td>{{ employee.DOJ }}</td>
+                    <td>{{ employee.Project_manager }}</td>
+                    <td>{{ employee.Location }}</td>
+                    <td>{{ employee.Designation }}</td>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </body>
+    </html>
+{% endblock content %}
