@@ -1,0 +1,1 @@
+# ISQA8210_Assignment3_ownDjangoAppKV_PA_DF2
